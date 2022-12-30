@@ -1,0 +1,1 @@
+# Point of Sale Application with MERN Stack.
