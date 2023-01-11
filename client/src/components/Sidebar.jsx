@@ -146,7 +146,7 @@ const Sidebar = ({
                             {navItems.map(({ text, icon }) => {
                                 if(!icon){
                                     return(
-                                        <Typography key={text} sx={{ m: "2.25rem 0 1rem 3rem" }}>
+                                        <Typography key={text} sx={{ m: "2.25rem 0 1rem 1rem" }}>
                                             {text}
                                         </Typography>
                                     )
@@ -168,7 +168,7 @@ const Sidebar = ({
                                         >
                                             <ListItemIcon
                                                 sx={{
-                                                    ml: '2rem',
+                                                    ml: '0.5rem',
                                                     color: active === lcText ? theme.palette.primary[600] : theme.palette.secondary[200],
                                                 }}
                                             >
@@ -199,7 +199,7 @@ const Sidebar = ({
                             borderRadius="50%"
                             sx={{ objectFit: "cover" }}
                         /> */}
-                        <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem" >
+                        <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 0.5rem" >
                         <Box
                             component="img"
                             alt="profile"
