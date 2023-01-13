@@ -15,8 +15,9 @@ import managementRoutes from './routes/management.js';
 import User from './models/User.js';
 import Product from './models/Product.js';
 import ProductStat from './models/ProductStat.js';
+import Transaction from './models/Transaction.js'
 
-import { dataProduct, dataProductStat } from './data/index.js';
+import { dataProduct, dataProductStat, dataTransaction } from './data/index.js';
 // dataUser, 
 
 // configurations
@@ -49,7 +50,7 @@ mongoose.connect(process.env.MONGO_URL, {
 
     // only add data one time
     // Product.insertMany(dataProduct);
-    // ProductStat.insertMany(dataProductStat);
+    // Transaction.insertMany(dataTransaction);
     // , dataProductStat
     
 }).catch((err) => console.log(`${err} did not connect`));
